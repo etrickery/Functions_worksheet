@@ -30,24 +30,31 @@ Calculate the Area of a Rectangle
  */
 
 //variables
-    var width = "";     //define as "" so that while statement will work
-    var height = "";    //this will make it loop the first time
-    var area;           //variable to store result
+    var width;          //define variables width and height
+    var height;         //this will make it loop the first time
+    var area;           //variable to store results of function
 
 //functions
-    function calculateArea(w, h) {
-        return w * h;
+    function calculateArea(w, h) {  //use function to determine area
+        return w * h;               //calculate are by multiplying variables
     }
 
 //main body
+    //prompt user for width, using while statement, width = "" to begin
+
     while (width = "") {
         width = prompt("Please enter the width of the rectangle: ");
     }
+
+    //prompt user for height, using while statement, height = "" to begin
     while (height = "") {
         height = prompt("Please enter the height of the rectangle: ");
     }
 
+    //invoke function to determine area and store value in variable
+    area = calculateArea(width, height);
 
+    //display the results within the beloved console log
     console.log("The area of the rectangle is " + (area) + ".");
 
 
