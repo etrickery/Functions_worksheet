@@ -7,7 +7,6 @@ Functions Worksheet
 
  */
 
-
 /*
 Activity: Functions Worksheet
 (Week 4 Activities)
@@ -21,6 +20,11 @@ dont forget to create the result variable
 console log the result in concatenated statement
 20+commits
  */
+
+
+
+
+
 
 
 
@@ -51,12 +55,12 @@ Calculate the circumference of a circle.
 
     //define the Function to determine the circumference of the circle
     function circum(radInput) {
-        var pie = 3.1415;
-        var twoPieR;
+        var pie = 3.1415;       //variable to hold value of pie
+        var twoPieR;            //variable used to calculate circumference and round to nearest whole number
 
-        twoPieR = Math.ceil(2 * pie * radInput);
+        twoPieR = Math.ceil(2 * pie * radInput);        //calculate circumference and round to nearest whole number
 
-        return twoPieR;
+        return twoPieR;     //return value of twoPieR to main script
     }
 
 
@@ -72,7 +76,7 @@ Calculate the circumference of a circle.
 
     // Validate the user input, until they enter something
     while (radius === "") {
-        radius = prompt("You need to enter a NUMBER, please enter the radius: ")
+        radius = prompt("You need to enter a NUMBER, please enter the radius: ");
 
     }
     //Thank the user for their input
@@ -84,7 +88,7 @@ Calculate the circumference of a circle.
 
 
     //display the radius and result within a statement
-    console.log("A circle with a radius of " + (radius) + " inches will have a circumference of " + (result) + " inches.");
+    console.log("A circle with a radius of " + (radius) + " inches will have a circumference of almost " + (result) + " inches.");
 
 
 
@@ -106,6 +110,36 @@ in a function
     Result to print to the console:
         It takes X bee stings to kill this animal.
  */
+
+//variables
+    var victimWeight;
+    var totalStings;
+
+
+//functions
+    function beeStings(victimWeight) {
+        var numStings = 8.666666667;        //function variable for number of stings per pound required to kill an animal
+
+        return victimWeight * numStings;    //return the totalStings to the program
+    }
+
+
+//body
+
+    //Inform user of script intentions
+    console.log("This script will calculate the number of bee stings required to kill an animal, based on the weight of the animal.");
+
+    //prompt user for weight of animal
+    victimWeight = prompt("Enter the weight (in pounds) of the victim: ");
+
+    //Validate the user's input
+    while (victimWeight === "") {
+        victimWeight = prompt("Stop fooling around, enter the weight of the victim: ");
+    }
+
+    //invoke the function to calculate the result
+    totalStings = beeStings(victimWeight)
+
 
 
 
