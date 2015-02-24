@@ -40,36 +40,44 @@ Calculate the circumference of a circle.
         The circumference of the circle is X
  */
 
-var radius; //Radius of circle, input by user
-var result; //result of the funtion called below (circumference)
+//variables
+
+    var radius; //Radius of circle, input by user
+    var result; //result of the funtion called below (circumference)
 
 
-// Display the intentions of the script within the console log
-console.log("This script will determine the circumference of a circle, the user will input the radius.");
+
+//functions
+
+    //define the Function to determine the circumference of the circle
+    function circumference(radius) {
+        var result;
+        result = (2 * 3.14) * (radius);
+        return result;
+    }
 
 
-// prompt the user to input the radius of the circle and store the user's input within the variable radius
-radius = prompt("Please enter the radius of the circle (in inches): ");
+//body
+
+    // Display the intentions of the script within the console log
+    console.log("This script will determine the circumference of a circle, the user will input the radius.");
 
 
-// Validate the user input with ternary statement, and prompt again or thank the user for their input
-(radius === ""||isNAN(radius)) ? radius = prompt("You need to enter a NUMBER, please enter the radius: ", "12"):console.log("Thank you. You entered " + (radius) + ".");
+    // prompt the user to input the radius of the circle and store the user's input within the variable radius
+    radius = prompt("Please enter the radius of the circle (in inches): ");
 
 
-//define the Function to determine the circumference of the circle
-function circumference(radius) {
-    var result;
-    result = (2 * 3.14) * (radius);
-    return result;
-}
+    // Validate the user input with ternary statement, and prompt again or thank the user for their input
+    (radius === ""||isNAN(radius)) ? radius = prompt("You need to enter a NUMBER, please enter the radius: ", "12"):console.log("Thank you. You entered " + (radius) + ".");
 
 
-//invoke or call the function radius
-circumference(radius);
+
+    //invoke or call the function radius
+    circumference(radius);
 
 
-//display the radius and result within a statement
-console.log("A circle with a radius of " + (radius) + " inches will have a circumference of " + (result) + ".");
+    //display the radius and result within a statement
+    console.log("A circle with a radius of " + (radius) + " inches will have a circumference of " + (result) + ".");
 
 
 
