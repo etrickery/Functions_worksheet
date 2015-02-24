@@ -50,9 +50,9 @@ Calculate the circumference of a circle.
 //functions
 
     //define the Function to determine the circumference of the circle
-    function circumference(radius) {
+    function circum(radInput) {
         var result;
-        result = (2 * 3.14) * (radius);
+        result = ((radInput));
         return result;
     }
 
@@ -67,13 +67,17 @@ Calculate the circumference of a circle.
     radius = prompt("Please enter the radius of the circle (in inches): ");
 
 
-    // Validate the user input with ternary statement, and prompt again or thank the user for their input
-    (radius === ""||isNAN(radius)) ? radius = prompt("You need to enter a NUMBER, please enter the radius: ", "12"):console.log("Thank you. You entered " + (radius) + ".");
+    // Validate the user input, until they enter something
+    while (radius === "") {
+        radius = prompt("You need to enter a NUMBER, please enter the radius: ")
 
+    }
+    //Thank the user for their input
+    console.log("Thank you. You entered " + (radius) + ".");
 
 
     //invoke or call the function radius
-    circumference(radius);
+    circum(radius);
 
 
     //display the radius and result within a statement
