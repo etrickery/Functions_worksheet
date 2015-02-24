@@ -23,6 +23,40 @@ console log the result in concatenated statement
 
 
 
+/*
+Example:
+Calculate the Area of a Rectangle
+
+ */
+
+//variables
+    var width = "";     //define as "" so that while statement will work
+    var height = "";    //this will make it loop the first time
+    var area;           //variable to store result
+
+//functions
+    function calculateArea(w, h) {
+        return w * h;
+    }
+
+//main body
+    while (width = "") {
+        width = prompt("Please enter the width of the rectangle: ");
+    }
+    while (height = "") {
+        height = prompt("Please enter the height of the rectangle: ");
+    }
+
+
+    console.log("The area of the rectangle is " + (area) + ".");
+
+
+
+
+
+
+
+
 
 
 
