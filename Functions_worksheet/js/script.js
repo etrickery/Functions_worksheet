@@ -40,6 +40,26 @@ Calculate the circumference of a circle.
         The circumference of the circle is X
  */
 
+var radius; //Radius of circle
+var result;
+
+// Display the intentions of the script within the console log
+console.log("This script will determine the circumference of a circle, the user will input the radius.");
+
+// prompt the user to input the radius of the circle and store the user's input within the variable radius
+radius = prompt("Please enter the radius of the circle (in inches): ");
+
+// Validate the user input with ternary statement, and prompt again or thank the user for their input
+(radius=="") ? radius = prompt("You didn't enter anything, please enter the radius: ", "12"):console.log("Thank you. You entered " + (radius) + ".");
+
+    circumference();
+
+function circumference(radius) {
+    var circ;   //Circumference of the circle
+
+
+}
+
 
 
 
