@@ -107,15 +107,19 @@ in a function
         It takes X bee stings to kill this animal.
  */
 
+
+//clear some space on the console log
+console.log("\n");
+
+
 //variables
-    var victimWeight;
-    var totalStings;
+    var victimWeight;   //weight of victim as input by user
+    var totalStings;    //total number of stings required to be fatal, as calculated by function
 
 
 //functions
-    function beeStings(victimWeight) {
+    function beeStings(victimWeight) {  //beeStings will return the totalStings value to the main program
         var numStings = 8.666666667;        //function variable for number of stings per pound required to kill an animal
-
         return Math.ceil(victimWeight * numStings);    //return the totalStings to the program
     }
 
@@ -129,7 +133,7 @@ in a function
     victimWeight = prompt("Enter the weight (in pounds) of the victim: ");
 
     //Validate the user's input
-    while (victimWeight === "") {
+    while (victimWeight === "") {   //Respond and require proper input from the user
         victimWeight = prompt("Stop fooling around, enter the weight of the victim: ");
     }
 
@@ -137,7 +141,7 @@ in a function
     totalStings = beeStings(victimWeight);
 
     //display the results of this portion of the program
-
+    console.log("For a " + (victimWeight) + " lb animal, it would require " + (totalStings) + " bee stings to be fatal.");
 
 
 
