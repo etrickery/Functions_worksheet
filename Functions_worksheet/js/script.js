@@ -51,9 +51,12 @@ Calculate the circumference of a circle.
 
     //define the Function to determine the circumference of the circle
     function circum(radInput) {
-        var result;
-        result = ((radInput));
-        return result;
+        var pie = 3.1415;
+        var twoPieR;
+
+        twoPieR = Math.ceil(2 * pie * radInput);
+
+        return twoPieR;
     }
 
 
@@ -77,11 +80,11 @@ Calculate the circumference of a circle.
 
 
     //invoke or call the function radius
-    circum(radius);
+    result = circum(radius);
 
 
     //display the radius and result within a statement
-    console.log("A circle with a radius of " + (radius) + " inches will have a circumference of " + (result) + ".");
+    console.log("A circle with a radius of " + (radius) + " inches will have a circumference of " + (result) + " inches.");
 
 
 
