@@ -55,12 +55,8 @@ Calculate the circumference of a circle.
 
     //define the Function to determine the circumference of the circle
     function circum(radInput) {
-        var pie = 3.1415;       //variable to hold value of pie
-        var twoPieR;            //variable used to calculate circumference and round to nearest whole number
-
-        twoPieR = Math.ceil(2 * pie * radInput);        //calculate circumference and round to nearest whole number
-
-        return twoPieR;     //return value of twoPieR to main script
+        //calculate circumference and round to nearest whole number and return value of function to main script
+        return Math.ceil(2 * 3.1415 * radInput);;
     }
 
 
@@ -120,7 +116,7 @@ in a function
     function beeStings(victimWeight) {
         var numStings = 8.666666667;        //function variable for number of stings per pound required to kill an animal
 
-        return victimWeight * numStings;    //return the totalStings to the program
+        return Math.ceil(victimWeight * numStings);    //return the totalStings to the program
     }
 
 
@@ -138,7 +134,10 @@ in a function
     }
 
     //invoke the function to calculate the result
-    totalStings = beeStings(victimWeight)
+    totalStings = beeStings(victimWeight);
+
+    //display the results of this portion of the program
+
 
 
 
