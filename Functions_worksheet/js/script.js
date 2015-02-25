@@ -44,17 +44,19 @@ Calculate the Area of a Rectangle
 //main body
     //prompt user for width, using while statement, width = "" to begin
 
-    while (width = "") {
-        width = prompt("Please enter the width of the rectangle: ");
+    width = prompt("Enter the width of a rectangle");
+    while (width === "") {
+        width = prompt("Please, enter the width of the rectangle: ");
     }
 
     //prompt user for height, using while statement, height = "" to begin
-    while (height = "") {
+    height = prompt("Enter the height of the rectangle");
+    while (height === "") {
         height = prompt("Please enter the height of the rectangle: ");
     }
 
     //invoke function to determine area and store value in variable
-    area = calculateArea(width, height);
+    area = calculateArea(Number(width), Number(height));
 
     //display the results within the beloved console log
     console.log("The area of the rectangle is " + (area) + ".");
@@ -86,6 +88,9 @@ Calculate the circumference of a circle.
     Result to print to the console:
         The circumference of the circle is X
  */
+
+//clear some space on the console log
+console.log("\n");
 
 //variables
 
@@ -185,6 +190,8 @@ console.log("\n");
 
     //display the results of this portion of the program
     console.log("For a " + (victimWeight) + " lb animal, it would require " + (totalStings) + " bee stings to be fatal.");
+
+
 
 
 
